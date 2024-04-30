@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --branco: #E6EFE8;
+    --cinza: #4B4B4F;
+    --marrom: #593F32;
+    --vermelho: #943831;
+    --verde: #497C82;
+
+    --f-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --f-destaque: "Bebas Neue", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cinza)
+}
+
+/* CABEÇALHO */
+header{
+    background-image:linear-gradient(#3a2920, var(--marrom));
+    height: fit-content;
+    font-family: var(--f-padrao);
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--branco);
+}
+header > p{
+    margin-top: 0.2em;
+    padding-bottom: 0.5em;
+}
+
+#navegador{
+    background-color: var(--vermelho);
+    text-align: center;
+
+}
+#navegador > a{
+    display: inline-block;
+    color: var(--branco);
+    background-color: rgba(0, 0, 0, 0.247);
+    font-family: var(--f-destaque);
+    font-size: 1.2em;
+    text-decoration: none;
+    width: 5em;
+    padding: 0.5em 2em;
+}
+#navegador > a:hover{
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+/* PRINCIPAL */
+main{
+    min-width: 400px;
+    max-width: 1000px;
+    margin: auto;
+    padding:0% 1em;
+    background-color: white;
+    font-family: var(--f-padrao);
+}
+main > section > h1, h2, h3{
+    font-family: var(--f-destaque);
+    color: var(--marrom);
+    padding:0.5em 0em;
+}
+main > section > h1{
+    font-size: 2em;
+}
+main > h1{
+    font-family: var(--f-destaque);
+    color: var(--marrom);
+    padding:0.5em 0em;
+    font-size: 2em;
+}
+main > h2{
+    text-decoration: underline;
+}
+main > p{
+    text-align: justify;
+    text-indent: 1em;
+}
+
+/* NOTÍCIAS */
+.news-block{
+    margin-bottom: 2.5vh;
+    background-color: var(--branco);
+}
+.titulo-news{
+    font-family: var(--f-destaque);
+    font-size: 1.6em;
+    padding: 0.5em;
+    background-color: var(--cinza);
+    color: white;
+}
+.fonte{
+    font-family: var(--f-padrao);
+    font-size: 0.7em;
+    color: var(--cinza);
+    text-align: right;
+}
+.fonte > a:link , a:visited{
+    color: var(--cinza);
+}
+.txt-news{
+    padding: 0em 1em;
+    text-align: justify;
+    text-indent: 1EM;
+}
+
+/* LANÇAMENTOS */
+.release-block{
+    margin-bottom: 2.5vh;
+    background-color: var(--cinza);
+}
+.titulo-release{
+    font-family: var(--f-destaque);
+    font-size: 1.6em;
+    padding: 0.5em;
+    background-color: var(--vermelho);
+    color: white;
+}
+.txt-release{
+    padding: 0em 1em;
+    text-align: justify;
+    color: var(--branco);
+}
+
+/* RODAPÉ */
+footer{
+    background-color: var(--marrom);
+}
+footer > p{
+    width: 70vw;
+    font-family: var(--f-padrao);
+    color: var(--branco);
+    padding: 0em 1em;
+}
+#rodape1{
+    padding-top: 3em;
+    text-align: left;
+}
+#rodape2{
+    text-align: justify;
+    font-size: 0.8em;
+    text-indent: 1em;
+
+}
+#rodape3{
+    text-align: right;
+    width: 90vw;
+    padding-bottom: 1em;
+}
